@@ -1,14 +1,10 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .background{
   width: 1280px;
   display: flex;
   flex-direction: column;
+  background-color: var(--surface);
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .row{

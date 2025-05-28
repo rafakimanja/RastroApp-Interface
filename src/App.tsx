@@ -1,18 +1,19 @@
 import Card from './components/Card'
+import Inforcard from './components/Infocards/InforCard'
 import './App.css'
 
 function App() {
   return (
     <div className="background">
-      <div className="row" style={{justifyContent: 'center', gap: '3rem'}}>
-        <Card altura={0.6} largura={1.2}>
-          <h3>Pagamentos</h3>
+      <div className="row" style={{justifyContent: 'center', gap: '7rem'}}>
+        <Card altura={0.65} largura={1.4}>
+          <Inforcard valor={2000} categoria='ganhos' titulo='Ganhos' />
         </Card>
-        <Card altura={0.6} largura={1.2}>
-          <h3>Pagamentos</h3>
+        <Card altura={0.65} largura={1.4}>
+          <Inforcard valor={1500} categoria='despesas' titulo='Despesas' />
         </Card>
-        <Card altura={0.6} largura={1.2}>
-          <h3>Pagamentos</h3>
+        <Card altura={0.65} largura={1.4}>
+          <Inforcard valor={500} categoria='saldo' titulo='Saldo' />
         </Card>
       </div>
       <div className="row" style={{justifyContent: 'space-evenly'}}>
@@ -28,8 +29,7 @@ function App() {
           <h3>Informação</h3>
         </Card>
         <Card altura={0.5} largura={2}>
-          <p>Próximo</p>
-          <p>Mês</p>
+          <p>Próximo mês</p>
         </Card>
         <Card>
           <div></div>

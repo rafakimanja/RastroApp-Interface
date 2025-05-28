@@ -1,11 +1,12 @@
 import Navbar from "./Navbar";
 import { Outlet } from "react-router";
+import './RootLayout.css'
 
 export default function RootLayout(){
     return(
-        <div>
+        <div className="bg-root">
             <Navbar/>
-            <main>
+            <main className="bg-main">
                 <Outlet/>
             </main>
         </div>

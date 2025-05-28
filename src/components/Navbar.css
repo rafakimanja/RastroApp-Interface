@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg);
+    color: var(--text);
+    padding: 16px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.nav-links a{
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: var(--primary);
+}
