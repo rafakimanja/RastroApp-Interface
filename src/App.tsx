@@ -1,4 +1,4 @@
-import Card from './components/Card'
+import Card from './components/Cards/Card'
 import Inforcard from './components/Infocards/InforCard'
 import './App.css'
 
