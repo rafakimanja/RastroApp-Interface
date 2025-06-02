@@ -9,17 +9,16 @@
 
 .form-title {
   font-size: 20px;
-  margin-bottom: 24px;
+  margin: 0 0 60px 0;
   text-align: center;
   font-weight: bold;
 }
 
 .form-group{
-    width: 85%;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .input-group {
@@ -36,7 +35,8 @@
   color: var(--text);
 }
 
-.input-group input {
+.input-group input,
+.input-group select {
   padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid #d1d5db;
@@ -46,7 +46,8 @@
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.input-group input:focus {
+.input-group input:focus,
+.input-group select:focus {
   border-color: var(--primary);
   outline: none;
 }

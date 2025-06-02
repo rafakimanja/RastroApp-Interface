@@ -1,71 +1,39 @@
 import { Link } from "react-router";
+import CategoriaInput from "./CategoriaInput";
 import './StyleForm.css'
 
-export default function FormDespesasVariaveis(){
-    return(
+export default function FormDespesasVariaveis() {
+
+    const despesasVariaveis = [
+        { value: '', label: 'Selecione uma categoria' },
+        { value: 'midias-sociais', label: 'Mídias Sociais' },
+        { value: 'manutencao-e-reparos-domesticos', label: 'Manutenção e reparos domésticos' },
+        { value: 'auxilio-a-familia', label: 'Auxílio à família' },
+        { value: 'detetizacao-esgoto', label: 'Detetização / Esgoto' },
+        { value: 'fundo-de-reserva-para-lazer', label: 'Fundo de Reserva para Lazer' },
+        { value: 'correio-motoboy', label: 'Correio / Motoboy' },
+        { value: 'cigarro-cerveja', label: 'Cigarro / Cerveja' },
+        { value: 'utilidades-domesticas-e-decoracao', label: 'Utilidades Domésticas e Decoração' },
+        { value: 'contribuicao-sindical', label: 'Contribuição Sindical' },
+        { value: 'anuidade-de-classe', label: 'Anuidade de Classe' },
+        { value: 'imposto-de-renda', label: 'Imposto de renda' },
+    ];
+
+
+    return (
         <div className="form-card">
+            <h2 className="form-title">Registro Despesas Variáveis</h2>
             <div className="form-group">
                 <div className="input-group">
-                    <label htmlFor="valor">Mídias Sociais:</label>
+                    <label htmlFor="valor">Valor:</label>
                     <input type="number" id="valor" placeholder="Ex: 1500.00" />
                 </div>
 
-                <div className="input-group">
-                    <label htmlFor="valor">Manutenção e reparos domésticos:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-            </div>
-
-            <div className="form-group">
-                <div className="input-group">
-                    <label htmlFor="valor">Auxílio à família:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
+                <CategoriaInput categorias={despesasVariaveis} />
 
                 <div className="input-group">
-                    <label htmlFor="valor">Detetização / Esgoto:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-            </div>
-
-            <div className="form-group">
-                <div className="input-group">
-                    <label htmlFor="valor">Fundo de Reserva para Lazer:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-
-                <div className="input-group">
-                    <label htmlFor="valor">Correio / Motoboy:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-
-                <div className="input-group">
-                    <label htmlFor="valor">Cigarro / Cerveja:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-            </div>
-
-            <div className="form-group">
-                <div className="input-group">
-                    <label htmlFor="valor">Utilidades Domésticas e Decoração:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-
-                <div className="input-group">
-                    <label htmlFor="valor">Contribuição Sindical:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-
-                <div className="input-group">
-                    <label htmlFor="valor">Anuidade de Classe:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-            </div>
-
-            <div className="form-group">
-                <div className="input-group">
-                    <label htmlFor="valor">Imposto de renda:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
+                    <label htmlFor="descricao">Descrição:</label>
+                    <input type="text" name="" id="" placeholder="Ex: recebi um dinheiro..." />
                 </div>
             </div>
 

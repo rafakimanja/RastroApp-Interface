@@ -1,37 +1,32 @@
 import { Link } from "react-router";
 import './StyleForm.css'
+import CategoriaInput from "./CategoriaInput";
 
-export default function FormRendaPassiva(){
-    return(
+export default function FormRendaPassiva() {
+
+    const categoriasRendaPassiva = [
+        { value: '', label: 'Selecione uma categoria' },
+        { value: 'rendimentos-aplicacao', label: 'Rendimentos de aplicação' },
+        { value: 'resgate-saque', label: 'Resgate / Saque' },
+        { value: 'royalties', label: 'Royaltes' },
+        { value: 'saldo-anterior', label: 'Saldo em conta (Ano Anterior)' },
+        { value: 'dividendos', label: 'Dividendos' },
+    ];
+
+    return (
         <div className="form-card">
+            <h2 className="form-title">Registro de Renda Passiva</h2>
             <div className="form-group">
                 <div className="input-group">
-                    <label htmlFor="valor">Rendimentos de aplicação:</label>
+                    <label htmlFor="valor">Valor:</label>
                     <input type="number" id="valor" placeholder="Ex: 1500.00" />
                 </div>
 
-                <div className="input-group">
-                    <label htmlFor="valor">Resgate / Saque:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-            </div>
-
-            <div className="form-group">
-                <div className="input-group">
-                    <label htmlFor="valor">Royaltes:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
+                <CategoriaInput categorias={categoriasRendaPassiva} />
 
                 <div className="input-group">
-                    <label htmlFor="valor">Saldo em conta (Ano Anterior):</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
-                </div>
-            </div>
-
-            <div className="form-group">
-                <div className="input-group">
-                    <label htmlFor="valor">Dividendos:</label>
-                    <input type="number" id="valor" placeholder="Ex: 1500.00" />
+                    <label htmlFor="descricao">Descrição:</label>
+                    <input type="text" name="" id="" placeholder="Ex: recebi um dinheiro..." />
                 </div>
             </div>
 
