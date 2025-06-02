@@ -1,48 +1,43 @@
-import { Link } from "react-router";
-import { useState } from "react"
+import { useState } from 'react';
+import FormRendaAtiva from '../components/Forms/RendaAtiva';
 import './Form.css'
 
 export default function Form(){
-    const [type, setType] = useState('entrada')
+
+    const [form, setForm] = useState('')
+
+    const returnForm = (form: string) => {
+        switch (form) {
+            case 'renda ativa':
+                return <FormRendaAtiva />;
+            case 'renda passiva':
+                return <p>Formulário de Renda Passiva</p>;
+            case 'investimentos':
+                return <p>Formulário de Investimentos</p>;
+            case 'despesas fixas':
+                return <p>Formulário de Despesas Fixas</p>;
+            case 'despesas variaveis':
+                return <p>Formulário de Despesas Variáveis</p>;
+            default:
+                return <p>Selecione uma categoria acima.</p>;
+        }
+    }
 
     return (
-        <div className="form-card">
-            <h1 className="form-title">Meu Formulário</h1>
+        <div className="bg-form">
+            <nav className="navbar-inline">
+                <ul className="navbar-list">
+                <li><button className="nav-item" id='renda' onClick={() => setForm("renda ativa")}>Renda Ativa</button></li>
+                <li><button className="nav-item" id='renda' onClick={() => setForm("renda passiva")}>Renda Passiva</button></li>
+                <li><button className="nav-item" id='investimento' onClick={() => setForm("investimentos")}>Investimentos</button></li>
+                <li><button className="nav-item" id='despesa' onClick={() => setForm("despesas fixas")}>Despesas Fixas</button></li>
+                <li><button className="nav-item" id='despesa' onClick={() => setForm("despesas variaveis")}>Despesas Variáveis</button></li>
+                </ul>
+            </nav>
 
-            <div className="form-group">
-                <label htmlFor="valor">Valor</label>
-                <input type="number" id="valor" placeholder="Ex: 1500.00" />
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="data">Data</label>
-                <input type="date" id="data" />
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="tipo">Tipo</label>
-                <select id="tipo" value={type} onChange={(e) => setType(e.target.value)}>
-                <option value="entrada">Entrada</option>
-                <option value="saida">Saída</option>
-                </select>
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="categoria">Categoria</label>
-                <select id="categoria" disabled={type === 'entrada'}>
-                <option value="">Selecione</option>
-                <option value="contas">Contas</option>
-                <option value="alimentacao">Alimentação</option>
-                <option value="transporte">Transporte</option>
-                <option value="outros">Outros</option>
-                </select>
-            </div>
-
-            <div className="btn-group">
-                <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
-                <button className="btn-form" id="submit">Salvar</button>
+            <div className="form-content">
+                { returnForm(form) }
             </div>
         </div>
-  );
-
+    );
 }
