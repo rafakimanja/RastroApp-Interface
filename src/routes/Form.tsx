@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { useState } from "react"
 import './Form.css'
 
@@ -38,7 +39,7 @@ export default function Form(){
             </div>
 
             <div className="btn-group">
-                <button className="btn-form" id="cancel">Cancelar</button>
+                <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
                 <button className="btn-form" id="submit">Salvar</button>
             </div>
         </div>

@@ -63,9 +63,8 @@
   margin-top: 50px;
 }
 
-
-.btn-form{
-  width: 30%;
+.btn-form {
+  width: 125px;
   padding: 12px;
   color: white;
   border: none;
@@ -73,10 +72,15 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  text-align: center;          /* Garante centralização */
+  display: inline-block;       /* Garante consistência entre <Link> e <button> */
+  box-sizing: border-box;      /* Garante que padding não estoure largura */
 }
+
 
 #submit{
     background-color: var(--primary);
+    font-size: 17px;
 }
 
 #submit:hover {
@@ -85,6 +89,8 @@
 
 #cancel{
     background-color: #f54d48;
+    text-align: center;
+    text-decoration: none;
 }
 
 #cancel:hover{

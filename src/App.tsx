@@ -24,8 +24,8 @@ function App() {
           <h1>Gráfico 1</h1>
         </Card>
       </div>
-      <div className="row" style={{justifyContent: 'space-between'}}>
-        <Card altura={0.5} largura={3.9}>
+      <div className="row" style={{justifyContent: 'space-between', marginLeft: '1.5rem'}}>
+        <Card altura={0.5} largura={3.8}>
           <h3>Informação</h3>
         </Card>
         <Card altura={0.5} largura={2}>
