@@ -36,8 +36,7 @@
   color: var(--text);
 }
 
-.input-group input,
-.input-group select {
+.input-group input {
   padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid #d1d5db;
@@ -47,25 +46,49 @@
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.input-group input:focus,
-.input-group select:focus {
+.input-group input:focus {
   border-color: var(--primary);
   outline: none;
 }
 
-.input-group select:disabled {
-  background-color: #e5e7eb; /* cinza claro */
-  color: #9ca3af;            /* texto mais apagado */
-  cursor: not-allowed;
-  opacity: 0.7;
+
+.input-data {
+  display: flex;
+  align-items: center;
+}
+
+.input-data label {
+  margin-right: 10px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.input-data input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: var(--card-bg);
+  color: var(--text);
+  font-size: 14px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.input-data input:focus {
+  border-color: var(--primary);
+  outline: none;
 }
 
 .btn-group {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   gap: 30px;
   width: 80%;
   margin-top: 50px;
+}
+
+.btn-action {
+  display: flex;
+  gap: 30px;
 }
 
 .btn-form {

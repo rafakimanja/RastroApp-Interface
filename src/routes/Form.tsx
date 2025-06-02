@@ -2,6 +2,7 @@ import { useState } from 'react';
 import FormRendaAtiva from '../components/Forms/RendaAtiva';
 import FormRendaPassiva from '../components/Forms/RendaPassiva';
 import FormInvestimentos from '../components/Forms/Investimentos';
+import FormDespesasFixas from '../components/Forms/DespesasFixa';
 import './Form.css'
 
 export default function Form(){
@@ -17,7 +18,7 @@ export default function Form(){
             case 'investimentos':
                 return <FormInvestimentos />;
             case 'despesas fixas':
-                return <p>Formulário de Despesas Fixas</p>;
+                return <FormDespesasFixas />;
             case 'despesas variaveis':
                 return <p>Formulário de Despesas Variáveis</p>;
             default:
