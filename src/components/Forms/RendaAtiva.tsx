@@ -28,16 +28,15 @@ export default function FormRendaAtiva(){
                 </div>
             </div>
 
-            <div className="form-group">
-                <div className="input-group">
+             <div className="btn-group">
+                <div className="input-data">
                     <label htmlFor="data">Data:</label>
                     <input type="date" id="data" />
                 </div>
-            </div>
-
-            <div className="btn-group">
-                <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
-                <button className="btn-form" id="submit">Salvar</button>
+                <div className="btn-action">
+                    <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
+                    <button className="btn-form" id="submit">Salvar</button>
+                </div>
             </div>
         </div>
     )

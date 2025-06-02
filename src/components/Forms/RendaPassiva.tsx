@@ -33,16 +33,17 @@ export default function FormRendaPassiva(){
                     <label htmlFor="valor">Dividendos:</label>
                     <input type="number" id="valor" placeholder="Ex: 1500.00" />
                 </div>
-
-                <div className="input-group">
-                    <label htmlFor="data">Data:</label>
-                    <input type="date" id="data" />
-                </div>
             </div>
 
             <div className="btn-group">
-                <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
-                <button className="btn-form" id="submit">Salvar</button>
+                <div className="input-data">
+                    <label htmlFor="data">Data:</label>
+                    <input type="date" id="data" />
+                </div>
+                <div className="btn-action">
+                    <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
+                    <button className="btn-form" id="submit">Salvar</button>
+                </div>
             </div>
         </div>
     )
