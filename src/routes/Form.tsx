@@ -3,6 +3,7 @@ import FormRendaAtiva from '../components/Forms/RendaAtiva';
 import FormRendaPassiva from '../components/Forms/RendaPassiva';
 import FormInvestimentos from '../components/Forms/Investimentos';
 import FormDespesasFixas from '../components/Forms/DespesasFixa';
+import FormDespesasVariaveis from '../components/Forms/DespesasVariaveis';
 import './Form.css'
 
 export default function Form(){
@@ -20,7 +21,7 @@ export default function Form(){
             case 'despesas fixas':
                 return <FormDespesasFixas />;
             case 'despesas variaveis':
-                return <p>Formulário de Despesas Variáveis</p>;
+                return <FormDespesasVariaveis />;
             default:
                 return <p>Selecione uma categoria acima.</p>;
         }
