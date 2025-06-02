@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FormRendaAtiva from '../components/Forms/RendaAtiva';
+import FormRendaPassiva from '../components/Forms/RendaPassiva';
 import './Form.css'
 
 export default function Form(){
@@ -11,7 +12,7 @@ export default function Form(){
             case 'renda ativa':
                 return <FormRendaAtiva />;
             case 'renda passiva':
-                return <p>Formulário de Renda Passiva</p>;
+                return <FormRendaPassiva />;
             case 'investimentos':
                 return <p>Formulário de Investimentos</p>;
             case 'despesas fixas':
