@@ -5,6 +5,9 @@
   --text: #1f2937;            /* ótimo contraste com bg */
   --primary: #3cc670;         /* verde principal */
   --primary-dark: #2da35a;
+
+
+  --dropzone: #3b82f6;      /* azul cobalto */
 }
 
 
@@ -13,6 +16,8 @@
   --surface: #374151;         /* cinza escuro suave */
   --card-bg: #4b5563;         /* cinza médio – para cartões */
   --text: #f9fafb;
+
+  --dropzone: #60a5fa; 
 }
 
 

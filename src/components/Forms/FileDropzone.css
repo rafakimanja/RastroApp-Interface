@@ -1,0 +1,27 @@
+.dropzone {
+  border: 2px dashed #9ca3af;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.dropzone:hover {
+  background-color: var(--card-bg);
+  border-color: var( --dropzone);
+  color: var(--dropzone);
+}
+
+.dropzone.dragging {
+  background-color: var(--card-bg);
+  border-color: var( --dropzone);
+  color: var(--dropzone);
+}
+
+.hidden-input {
+  display: none;
+}

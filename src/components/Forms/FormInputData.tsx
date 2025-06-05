@@ -1,6 +1,7 @@
 import { Link } from "react-router"
 import CategoriaInput from "./CategoriaInput"
 import './StyleForm.css'
+import FileDropzone from "./FileDropzone"
 
 type FormInputDataProps = {
     titulo: string,
@@ -66,6 +67,18 @@ export default function FormInputData({ titulo, categoria, cor }: FormInputDataP
         ]
     }
 
+    const getFilezone = (categoria: string) => {
+        if(categoria.includes('renda')){
+            return ''
+        } else {
+            return (
+                <div className="input-group">
+                    <FileDropzone onFileSelect={(file) => console.log("Arquivo selecionado:", file)} />
+                </div>
+            )
+        }
+    }
+
     return (
         <div className="form-card">
             <h2 className="form-title">Formulário de {titulo}</h2>
@@ -77,10 +90,12 @@ export default function FormInputData({ titulo, categoria, cor }: FormInputDataP
                 <CategoriaInput categorias={categorias[categoria as keyof typeof categorias]} />
                 <div className="input-group">
                     <label htmlFor="descricao">Descrição:</label>
-                    <input type="text" name="" id={cor} placeholder="Ex: Investi em..." />
+                    <textarea className="descricao" id={cor} placeholder="Ex: Investi em..."></textarea>
                 </div>
+                {
+                    getFilezone(categoria)
+                }
             </div>
-
             <div className="btn-group">
                 <div className="input-data">
                     <label htmlFor="data">Data:</label>
