@@ -46,13 +46,6 @@
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.input-group input:focus,
-.input-group select:focus {
-  border-color: var(--primary);
-  outline: none;
-}
-
-
 .input-data {
   display: flex;
   align-items: center;
@@ -72,11 +65,6 @@
   color: var(--text);
   font-size: 14px;
   transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.input-data input:focus {
-  border-color: var(--primary);
-  outline: none;
 }
 
 .btn-group {
@@ -124,4 +112,19 @@
 
 #cancel:hover{
     background-color: #d43e39;
+}
+
+#verde:focus{
+  border-color: var(--primary);
+  outline: none;
+}
+
+#amarelo:focus{
+  border-color: #eeb835;
+  outline: none;
+}
+
+#vermelho:focus{
+   border-color: #f32a23;
+   outline: none;
 }
