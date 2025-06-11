@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 import CategoriaInput from "./CategoriaInput"
 import './StyleForm.css'
-import FileDropzone from "./FileDropzone"
+import FileDropzone from "../Dropzone/FileDropzone"
 
 type FormInputDataProps = {
     titulo: string,

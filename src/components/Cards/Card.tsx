@@ -3,16 +3,13 @@ import './Card.css'
 
 type CardProps = {
     children: ReactNode
-    largura?: number
-    altura?: number
+    id: string
 }
 
-export default function Card({ children, largura, altura }: CardProps){
-
-    const toSize = (value?: number) => value ? `${value * 10}rem` : 'auto'
+export default function Card({ children, id }: CardProps){
 
     return (
-        <div className="bg-card" style={{width: toSize(largura), height: toSize(altura)}}>
+        <div className="bg-card" id={id} >
             {children}
         </div>
     )

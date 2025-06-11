@@ -9,3 +9,30 @@
 .bg-card:hover{
     transform: translateY(-3px);
 }
+
+#infocards{
+    height: 6.5rem;
+    width: 14rem;
+}
+
+#graficos{
+    height: 22rem;
+    width: 38rem;
+}
+
+#informacoes{
+    height: 5rem;
+    width: 38rem;
+}
+
+@media (max-width: 1340px) and (min-width: 1024px){
+    #graficos {
+        width: 34rem;
+        height: 20rem;
+    }
+
+    #informacoes {
+        width: 34rem;
+        height: 4.5rem;
+    }
+}

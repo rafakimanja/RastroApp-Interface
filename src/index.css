@@ -34,4 +34,5 @@ body{
   color: var(--text);
   transition: background-color 0.2s ease, color 0.2s ease;
   margin: 0;
+  padding: 0;
 }
