@@ -1,0 +1,478 @@
+{
+    "renda_ativa": [
+        {
+            "value": "salario",
+            "label": "Salário (líquido)"
+        },
+        {
+            "value": "salario-conjuge",
+            "label": "Salário Cônjuge(líquido)"
+        },
+        {
+            "value": "adiantamento",
+            "label": "Adiantamento"
+        },
+        {
+            "value": "pro-labore",
+            "label": "Pró-labore"
+        }
+    ],
+    "renda_passiva": [
+        {
+            "value": "rendimentos-aplicacao",
+            "label": "Rendimentos de aplicação"
+        },
+        {
+            "value": "resgate-saque",
+            "label": "Resgate / Saque"
+        },
+        {
+            "value": "royalties",
+            "label": "Royaltes"
+        },
+        {
+            "value": "saldo-anterior",
+            "label": "Saldo em conta (Ano Anterior)"
+        },
+        {
+            "value": "dividendos",
+            "label": "Dividendos"
+        }
+    ],
+    "investimentos": [
+        {
+            "value": "fundo-emergencia",
+            "label": "Fundo de Emergência"
+        },
+        {
+            "value": "fundo-imobiliario",
+            "label": "Fundo Imobiliário"
+        },
+        {
+            "value": "renda-fixa",
+            "label": "Renda Fixa"
+        },
+        {
+            "value": "renda-variavel",
+            "label": "Renda Variável"
+        },
+        {
+            "value": "fundo-investimento",
+            "label": "Fundo de Investimentos"
+        }
+    ],
+    "despesas_fixas": {
+        "Moradia": [
+            {
+                "value": "aluguel-prestacao",
+                "label": "Aluguel/Prestação"
+            },
+            {
+                "value": "condominio",
+                "label": "Condomínio"
+            },
+            {
+                "value": "iptu-taxas-municipais",
+                "label": "IPTU + Taxas Municipais"
+            },
+            {
+                "value": "seguro-residencial",
+                "label": "Seguro Residencial"
+            },
+            {
+                "value": "agua",
+                "label": "Água"
+            },
+            {
+                "value": "luz",
+                "label": "Luz"
+            },
+            {
+                "value": "gas",
+                "label": "Gás"
+            },
+            {
+                "value": "telefone-fixo",
+                "label": "Telefone Fixo"
+            },
+            {
+                "value": "celular",
+                "label": "Celular"
+            },
+            {
+                "value": "internet",
+                "label": "Internet"
+            },
+            {
+                "value": "tv-a-cabo",
+                "label": "TV à cabo"
+            },
+            {
+                "value": "empregado-a",
+                "label": "Empregado(a)"
+            }
+        ],
+        "Educação": [
+            {
+                "value": "mensalidade-educacao",
+                "label": "Mensalidade Colégio/Faculdade"
+            },
+            {
+                "value": "cursos",
+                "label": "cursos"
+            },
+            {
+                "value": "material-escolar",
+                "label": "Material Escolar/Uniforme"
+            },
+            {
+                "value": "matricula",
+                "label": "Matrícula"
+            }
+        ],
+        "Transporte": [
+            {
+                "value": "parcela-automovel",
+                "label": "Parcela do Automóvel"
+            },
+            {
+                "value": "ipva-dpvat",
+                "label": "IPVA + DPVAT"
+            },
+            {
+                "value": "seguro-auto",
+                "label": "Seguro Auto"
+            },
+            {
+                "value": "combustivel",
+                "label": "Combustível"
+            },
+            {
+                "value": "estacionamentos",
+                "label": "Estacionamentos"
+            },
+            {
+                "value": "lavagens",
+                "label": "Lavagens"
+            },
+            {
+                "value": "manutencao-veiculo",
+                "label": "Manutenção do Veículo"
+            },
+            {
+                "value": "multas",
+                "label": "Multas"
+            },
+            {
+                "value": "transporte-publico",
+                "label": "Transporte Público"
+            },
+            {
+                "value": "taxi-uber",
+                "label": "Táxi / Uber"
+            },
+            {
+                "value": "outras-despesas-transporte",
+                "label": "Outras Despesas com Transporte"
+            }
+        ],
+        "Alimentação": [
+            {
+                "value": "supermercado",
+                "label": "Supermercado"
+            },
+            {
+                "value": "feira",
+                "label": "Feira"
+            },
+            {
+                "value": "padaria",
+                "label": "Padaria"
+            },
+            {
+                "value": "acougue",
+                "label": "Açougue"
+            },
+            {
+                "value": "restaurante",
+                "label": "Restaurante - Almoço ou Jantar"
+            },
+            {
+                "value": "lanchonetes-sorveteria",
+                "label": "Lanchonetes/ Sorveteria"
+            },
+            {
+                "value": "ifood-delivery",
+                "label": "iFood/ Delivery"
+            },
+            {
+                "value": "marmitas",
+                "label": "Marmitas"
+            }
+        ],
+        "Saúde": [
+            {
+                "value": "plano-saude",
+                "label": "Plano de Saúde"
+            },
+            {
+                "value": "farmacia",
+                "label": "Farmácia"
+            },
+            {
+                "value": "dentista",
+                "label": "Dentista"
+            },
+            {
+                "value": "tratamento-medico",
+                "label": "Tratamento Médico"
+            },
+            {
+                "value": "consultas-exames",
+                "label": "Consultas/ Exames"
+            },
+            {
+                "value": "seguro-vida",
+                "label": "Seguro de Vida"
+            }
+        ],
+        "Lazer": [
+            {
+                "value": "assinaturas-streaming",
+                "label": "Assinaturas/ Streaming"
+            },
+            {
+                "value": "viagens-passeios",
+                "label": "Viagens/ Passeios"
+            },
+            {
+                "value": "passagens",
+                "label": "Passagens"
+            },
+            {
+                "value": "hotel",
+                "label": "Hotel"
+            },
+            {
+                "value": "jogos-videogame",
+                "label": "Jogos / Videogame"
+            },
+            {
+                "value": "aplicativos-internet",
+                "label": "Aplicativos / Internet"
+            },
+            {
+                "value": "cinema",
+                "label": "Cinema"
+            },
+            {
+                "value": "mensalidade-clube",
+                "label": "Mensalidade Clube"
+            },
+            {
+                "value": "atividades-esportivas",
+                "label": "Atividades Esportivas"
+            }
+        ],
+        "Despesas Pessoais": [
+            {
+                "value": "cabeleireiro-barbearia",
+                "label": "Cabeleireiro / Barbearia"
+            },
+            {
+                "value": "estetica",
+                "label": "Estética"
+            },
+            {
+                "value": "academia",
+                "label": "Academia"
+            },
+            {
+                "value": "roupas",
+                "label": "Roupas"
+            },
+            {
+                "value": "dizimo-caridade",
+                "label": "Dízimo / Contribuições / Caridade"
+            },
+            {
+                "value": "mesadas",
+                "label": "Mesadas"
+            },
+            {
+                "value": "higiene-pessoal",
+                "label": "Higiene Pessoal"
+            },
+            {
+                "value": "presentes",
+                "label": "Presentes"
+            }
+        ],
+        "Pet": [
+            {
+                "value": "petshop",
+                "label": "Pet Shop"
+            },
+            {
+                "value": "racao",
+                "label": "Ração"
+            },
+            {
+                "value": "veterinario-convenio",
+                "label": "Veterinário / Convênio"
+            },
+            {
+                "value": "medicamentos-pet",
+                "label": "Medicamentos"
+            },
+            {
+                "value": "vacina-pet",
+                "label": "Vacina"
+            },
+            {
+                "value": "roupas-acessorios-pet",
+                "label": "Roupas/Acessórios"
+            }
+        ],
+        "Outras Despesas": [
+            {
+                "value": "tarifas-bancarias",
+                "label": "Tarifas Bancárias"
+            },
+            {
+                "value": "anuidade-cartao",
+                "label": "Anuidade Cartão de Crédito"
+            },
+            {
+                "value": "pensao-alimenticia",
+                "label": "Pensão Alimentícia"
+            }
+        ],
+        "Provisionamento": [
+            {
+                "value": "seguro-auto-manutencoes",
+                "label": "Seguro Auto / Manutenções"
+            },
+            {
+                "value": "material-escolar-matricula",
+                "label": "Material escolar / Matrícula"
+            },
+            {
+                "value": "iptu",
+                "label": "IPTU"
+            },
+            {
+                "value": "anuidade-classe",
+                "label": "Anuidade Classe"
+            }
+        ]
+    },
+    "despesas_variaveis": {
+        "Outras Despesas": [
+            {
+                "value": "",
+                "label": "Selecione uma categoria"
+            },
+            {
+                "value": "midias-sociais",
+                "label": "Mídias Sociais"
+            },
+            {
+                "value": "manutencao-e-reparos-domesticos",
+                "label": "Manutenção e reparos domésticos"
+            },
+            {
+                "value": "auxilio-a-familia",
+                "label": "Auxílio à família"
+            },
+            {
+                "value": "detetizacao-esgoto",
+                "label": "Detetização / Esgoto"
+            },
+            {
+                "value": "fundo-de-reserva-para-lazer",
+                "label": "Fundo de Reserva para Lazer"
+            },
+            {
+                "value": "correio-motoboy",
+                "label": "Correio / Motoboy"
+            },
+            {
+                "value": "cigarro-cerveja",
+                "label": "Cigarro / Cerveja"
+            },
+            {
+                "value": "utilidades-domesticas-e-decoracao",
+                "label": "Utilidades Domésticas e Decoração"
+            },
+            {
+                "value": "contribuicao-sindical",
+                "label": "Contribuição Sindical"
+            },
+            {
+                "value": "anuidade-de-classe",
+                "label": "Anuidade de Classe"
+            },
+            {
+                "value": "imposto-de-renda",
+                "label": "Imposto de renda"
+            }
+        ],
+        "Dividas Passivas": [
+            {
+                "value": "parcelamento-fatura-cartao",
+                "label": "Parcelamento de Fatura Cartão"
+            },
+            {
+                "value": "pagamento-consignado",
+                "label": "Pagamento de Consignado"
+            },
+            {
+                "value": "parcela-credito-pessoal",
+                "label": "Parcela de Crédito Pessoal"
+            }
+        ],
+        "Despesas Dependentes": [
+            {
+                "value": "escola-faculdade-dependente",
+                "label": "Escola / Faculdade"
+            },
+            {
+                "value": "cursos-extras-dependente",
+                "label": "Cursos Extras"
+            },
+            {
+                "value": "material-escolar-dependente",
+                "label": "Material Escolar"
+            },
+            {
+                "value": "esportes-uniformes",
+                "label": "Esportes / Uniformes"
+            },
+            {
+                "value": "mesada-dependente",
+                "label": "Mesada"
+            },
+            {
+                "value": "passeios-ferias",
+                "label": "Passeios / Férias"
+            },
+            {
+                "value": "vestuario-dependente",
+                "label": "Vestuário"
+            },
+            {
+                "value": "saude-medicamentos-dependente",
+                "label": "Saúde / Medicamentos"
+            },
+            {
+                "value": "transporte-dependente",
+                "label": "Transporte"
+            },
+            {
+                "value": "pensao-alimenticia-mesada",
+                "label": "Pensão Alimentícia / Mesada"
+            }
+        ]
+    }
+}
