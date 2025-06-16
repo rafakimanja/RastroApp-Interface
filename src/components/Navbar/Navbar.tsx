@@ -20,6 +20,9 @@ export default function Navbar(){
                 <NavLink to="/form" end>
                     Form
                 </NavLink>
+                <NavLink to="/register">
+                    Registros
+                </NavLink>
             </nav>
             <button className="toggle-theme" onClick={() => setDarkMode(!darkMode)}>
                 {darkMode ? '☀️' : '🌙'}
