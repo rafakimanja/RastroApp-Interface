@@ -24,8 +24,8 @@ function refatoraDatasRegistros(transacoes: Transacao[]) {
 
 export default function Registro(){
 
-    const [transacoes, setTransacoes] = useState<Transacao[]>([
-        {
+    const transacoes: Transacao[] = [
+         {
             id: '1',
             titulo: 'Salário',
             descricao: 'Pagamento mensal da empresa',
@@ -43,7 +43,7 @@ export default function Registro(){
             operacao: 'saida',
             categoria: 'Alimentação'
         }
-    ])
+    ]
 
     const datasRefatoradas = refatoraDatasRegistros(transacoes)
 
@@ -63,10 +63,6 @@ export default function Registro(){
                     </div>
                 ))
             }
-
-            <div className="container-tabela">
-                <Tabela />
-            </div>
         </div>
     )
 }

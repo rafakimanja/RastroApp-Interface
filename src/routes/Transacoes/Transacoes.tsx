@@ -1,12 +1,16 @@
 import { useParams } from "react-router"
+import Tabela from "../../components/Tabela/Tabela"
+import './Transacoes.css'
 
 export default function Transacoes(){
-
-    const { ano, mes } = useParams()
+    let { ano, mes } = useParams()
 
     return(
-        <>
-            <h1>Transacoes de {mes} - {ano}</h1>
-        </>
+        <div className="bg-transacoes">
+            <h1>Transações de {mes} - {ano}</h1>
+            <div className="container-tabela">
+                <Tabela />
+            </div>
+        </div>
     )
 }

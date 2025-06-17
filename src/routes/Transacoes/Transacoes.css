@@ -1,8 +1,12 @@
-.bg-registro{
-    background-color: yellowgreen;
+.bg-transacoes{
     max-width: 1280px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.container-tabela{
+    width: 60%;
 }

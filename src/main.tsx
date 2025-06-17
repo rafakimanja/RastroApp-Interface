@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
         <Route index element={<App />} />
         <Route path='form' element={<Form />}/>
         <Route path='register' element={<Registro />}/>
-        <Route path='trasacoes/:ano/:mes' element={<Transacoes />}/>
+        <Route path='transacoes/:ano/:mes' element={<Transacoes />}/>
       </Route>
     </Routes>
   </BrowserRouter>
