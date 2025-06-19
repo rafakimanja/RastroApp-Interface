@@ -1,5 +1,5 @@
 :root {
-  --bg: #f3f4f6;              /* cinza muito claro – fundo da página */
+  --bg: #f3f4f6;              
   --surface: #e5e7eb;         /* cinza claro – áreas seccionadas, cards menos importantes */
   --card-bg: #ffffff;         /* ainda pode usar branco, mas só em partes pequenas */
   --text: #1f2937;            /* ótimo contraste com bg */

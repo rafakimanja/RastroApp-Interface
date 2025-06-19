@@ -1,5 +1,5 @@
-import Paper from '@mui/material/Paper'
 import { DataGrid, type GridColDef } from '@mui/x-data-grid'
+import './Tabela.css'
 
 const colunas: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -22,13 +22,29 @@ const paginationModel = { page: 0, pageSize: 5 }
 
 export default function Tabela() {
   return(
-    <Paper sx={{ height: 400, width: '100%'}}>
-      <DataGrid
+    <div className="bg-tabela">
+      <DataGrid 
         rows={linhas}
         columns={colunas}
         initialState={{ pagination: { paginationModel }}}
         pageSizeOptions={[5, 10]}
-       />
-    </Paper>
+        sx={{
+          '& .MuiDataGrid-columnContainer': {
+            backgroundColor: 'var(--card-bg)'
+          },
+          '& .MuiDataGrid-cell': {
+            backgroundColor: 'var(--card-bg)',
+            color: 'var(--text)'
+          },
+          '& .MuiDataGrid-footerContainer': {
+            backgroundColor: 'var(--card-bg)',
+            color: 'var(--text)'
+          },
+          '& .MuiTablePagination-root': {
+            color: 'var(--text)',
+          },
+        }}
+        />
+    </div>
   )
 }

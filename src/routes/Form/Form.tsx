@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { useState } from 'react';
 import FormInputData from '../../components/Forms/FormInputData';
 import './Form.css'

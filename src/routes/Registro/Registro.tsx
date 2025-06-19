@@ -1,18 +1,16 @@
-import { useState } from "react";
-import Tabela from "../../components/Tabela/Tabela";
 import type { Transacao } from "../../types/Transacao"
 import './Registro.css'
 import { useNavigate } from "react-router";
 
 function refatoraDatasRegistros(transacoes: Transacao[]) {
 
-    let datas: { dia: string; mes: string; ano: string; }[] = []
+    const datas: { dia: string; mes: string; ano: string; }[] = []
 
     transacoes.forEach(transacao => {
         const data = transacao.data.split("-")
-        let dia = data[2]
-        let mes = data[1]
-        let ano = data[0]
+        const dia = data[2]
+        const mes = data[1]
+        const ano = data[0]
 
         datas.push({dia, mes, ano})
     })
@@ -42,6 +40,24 @@ export default function Registro(){
             valor: 850,
             operacao: 'saida',
             categoria: 'Alimentação'
+        },
+        {
+            id: '3',
+            titulo: 'Freelance',
+            descricao: 'Projeto de site entregue para cliente',
+            data: '2025-04-18',
+            valor: 2200,
+            operacao: 'entrada',
+            categoria: 'Renda Extra'
+        },
+        {
+            id: '4',
+            titulo: 'Academia',
+            descricao: 'Mensalidade da academia',
+            data: '2025-07-05',
+            valor: 120,
+            operacao: 'saida',
+            categoria: 'Saúde'
         }
     ]
 
@@ -56,13 +72,15 @@ export default function Registro(){
     return(
         <div className="bg-registro">
             <h1>Registros</h1>
-            {
-                datasRefatoradas.map((data, index) => (
-                    <div className="data-transacoes" key={index} onClick={() => showDetails(data.ano, data.mes)}>
-                        <h2>{data.mes}/{data.ano}</h2>
-                    </div>
-                ))
-            }
+            <div className="transacoes">
+                {
+                    datasRefatoradas.map((data, index) => (
+                        <div className="data-transacoes" key={index} onClick={() => showDetails(data.ano, data.mes)}>
+                            <h2>{data.mes}/{data.ano}</h2>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }

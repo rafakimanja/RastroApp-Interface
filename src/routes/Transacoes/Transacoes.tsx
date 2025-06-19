@@ -3,7 +3,7 @@ import Tabela from "../../components/Tabela/Tabela"
 import './Transacoes.css'
 
 export default function Transacoes(){
-    let { ano, mes } = useParams()
+    const { ano, mes } = useParams()
 
     return(
         <div className="bg-transacoes">
