@@ -1,0 +1,647 @@
+[
+  {
+    "value": "salario",
+    "label": "Salário (líquido)",
+    "categoria": "renda_ativa"
+  },
+  {
+    "value": "salario-conjuge",
+    "label": "Salário Cônjuge(líquido)",
+    "categoria": "renda_ativa"
+  },
+  {
+    "value": "adiantamento",
+    "label": "Adiantamento",
+    "categoria": "renda_ativa"
+  },
+  {
+    "value": "renda-extra",
+    "label": "Renda Extra",
+    "categoria": "renda_ativa"
+  },
+  {
+    "value": "pro-labore",
+    "label": "Pró-labore",
+    "categoria": "renda_ativa"
+  },
+  {
+    "value": "rendimentos-aplicacao",
+    "label": "Rendimentos de aplicação",
+    "categoria": "renda_passiva"
+  },
+  {
+    "value": "resgate-saque",
+    "label": "Resgate / Saque",
+    "categoria": "renda_passiva"
+  },
+  {
+    "value": "royalties",
+    "label": "Royaltes",
+    "categoria": "renda_passiva"
+  },
+  {
+    "value": "saldo-anterior",
+    "label": "Saldo em conta (Ano Anterior)",
+    "categoria": "renda_passiva"
+  },
+  {
+    "value": "dividendos",
+    "label": "Dividendos",
+    "categoria": "renda_passiva"
+  },
+  {
+    "value": "fundo-emergencia",
+    "label": "Fundo de Emergência",
+    "categoria": "investimentos"
+  },
+  {
+    "value": "fundo-imobiliario",
+    "label": "Fundo Imobiliário",
+    "categoria": "investimentos"
+  },
+  {
+    "value": "renda-fixa",
+    "label": "Renda Fixa (Tesouro IPCA+/Pré-Fixados/LCA..)",
+    "categoria": "investimentos"
+  },
+  {
+    "value": "renda-variavel",
+    "label": "Renda Variável(Ações, Opções, Câmbio...)",
+    "categoria": "investimentos"
+  },
+  {
+    "value": "fundo-investimento",
+    "label": "Fundo de Investimentos",
+    "categoria": "investimentos"
+  },
+  {
+    "value": "aluguel-prestacao",
+    "label": "Aluguel/Prestação",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "condominio",
+    "label": "Condomínio",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "taxas-municipais",
+    "label": "IPTU + Taxas Municipais",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "seguro-residencial",
+    "label": "Seguro Residencial",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "agua",
+    "label": "Água",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "luz",
+    "label": "Luz",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "gas",
+    "label": "Gás",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "telefone-fixo",
+    "label": "Telefone Fixo",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "celular",
+    "label": "Celular",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "internet",
+    "label": "Internet",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "tv-a-cabo",
+    "label": "TV à cabo",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "empregado-a",
+    "label": "Empregado(a)",
+    "categoria": "despesas_fixas",
+    "grupo": "moradia"
+  },
+  {
+    "value": "mensalidade-educacao",
+    "label": "Mensalidade Colégio/Faculdade",
+    "categoria": "despesas_fixas",
+    "grupo": "educação"
+  },
+  {
+    "value": "cursos",
+    "label": "cursos",
+    "categoria": "despesas_fixas",
+    "grupo": "educação"
+  },
+  {
+    "value": "material-escolar",
+    "label": "Material Escolar/Uniforme",
+    "categoria": "despesas_fixas",
+    "grupo": "educação"
+  },
+  {
+    "value": "matricula",
+    "label": "Matrícula",
+    "categoria": "despesas_fixas",
+    "grupo": "educação"
+  },
+  {
+    "value": "parcela-automovel",
+    "label": "Parcela do Automóvel",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "ipva-dpvat",
+    "label": "IPVA + DPVAT",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "seguro-auto",
+    "label": "Seguro Auto",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "combustivel",
+    "label": "Combustível",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "estacionamentos",
+    "label": "Estacionamentos",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "lavagens",
+    "label": "Lavagens",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "manutencao-veiculo",
+    "label": "Manutenção do Veículo",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "multas",
+    "label": "Multas",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "transporte-publico",
+    "label": "Transporte Público",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "taxi-uber",
+    "label": "Táxi / Uber",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "outras-despesas-transporte",
+    "label": "outras_despesas com transporte",
+    "categoria": "despesas_fixas",
+    "grupo": "transporte"
+  },
+  {
+    "value": "supermercado",
+    "label": "Supermercado",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "feira",
+    "label": "Feira",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "padaria",
+    "label": "Padaria",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "acougue",
+    "label": "Açougue",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "restaurante",
+    "label": "Restaurante - Almoço ou Jantar",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "lanchonetes-sorveteria",
+    "label": "Lanchonetes/Sorveteria",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "ifood-delivery",
+    "label": "iFood/Delivery",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "marmitas",
+    "label": "Marmitas",
+    "categoria": "despesas_fixas",
+    "grupo": "alimentação"
+  },
+  {
+    "value": "plano-saude",
+    "label": "Plano de Saúde",
+    "categoria": "despesas_fixas",
+    "grupo": "saúde"
+  },
+  {
+    "value": "farmacia",
+    "label": "Farmácia",
+    "categoria": "despesas_fixas",
+    "grupo": "saúde"
+  },
+  {
+    "value": "dentista",
+    "label": "Dentista",
+    "categoria": "despesas_fixas",
+    "grupo": "saúde"
+  },
+  {
+    "value": "tratamento-medico",
+    "label": "Tratamento Médico",
+    "categoria": "despesas_fixas",
+    "grupo": "saúde"
+  },
+  {
+    "value": "consultas-exames",
+    "label": "Consultas/Exames",
+    "categoria": "despesas_fixas",
+    "grupo": "saúde"
+  },
+  {
+    "value": "seguro-vida",
+    "label": "Seguro de Vida",
+    "categoria": "despesas_fixas",
+    "grupo": "saúde"
+  },
+  {
+    "value": "assinaturas-streaming",
+    "label": "Assinaturas/Streaming",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "viagens-passeios",
+    "label": "Viagens/Passeios",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "passagens",
+    "label": "Passagens",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "hotel",
+    "label": "Hotel",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "jogos-videogame",
+    "label": "Jogos/Videogame",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "aplicativos-internet",
+    "label": "Aplicativos/Internet",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "cinema",
+    "label": "Cinema",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "mensalidade-clube",
+    "label": "Mensalidade Clube",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "atividades-esportivas",
+    "label": "Atividades Esportivas",
+    "categoria": "despesas_fixas",
+    "grupo": "lazer"
+  },
+  {
+    "value": "cabeleireiro-barbearia",
+    "label": "Cabeleireiro/Barbearia",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "estetica",
+    "label": "Estética",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "academia",
+    "label": "Academia",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "roupas",
+    "label": "Roupas",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "dizimo-caridade",
+    "label": "Dízimo / Contribuições / Caridade",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "mesadas",
+    "label": "Mesadas",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "higiene-pessoal",
+    "label": "Higiene Pessoal",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "presentes",
+    "label": "Presentes",
+    "categoria": "despesas_fixas",
+    "grupo": "despesas_pessoais"
+  },
+  {
+    "value": "petshop",
+    "label": "Pet Shop",
+    "categoria": "despesas_fixas",
+    "grupo": "pet"
+  },
+  {
+    "value": "racao",
+    "label": "Ração",
+    "categoria": "despesas_fixas",
+    "grupo": "pet"
+  },
+  {
+    "value": "veterinario-convenio",
+    "label": "Veterinário/Convênio",
+    "categoria": "despesas_fixas",
+    "grupo": "pet"
+  },
+  {
+    "value": "medicamentos-pet",
+    "label": "Medicamentos",
+    "categoria": "despesas_fixas",
+    "grupo": "pet"
+  },
+  {
+    "value": "vacina-pet",
+    "label": "Vacina",
+    "categoria": "despesas_fixas",
+    "grupo": "pet"
+  },
+  {
+    "value": "roupas-acessorios-pet",
+    "label": "Roupas/Acessórios",
+    "categoria": "despesas_fixas",
+    "grupo": "pet"
+  },
+  {
+    "value": "tarifas-bancarias",
+    "label": "Tarifas Bancárias",
+    "categoria": "despesas_fixas",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "anuidade-cartao",
+    "label": "Anuidade Cartão de Crédito",
+    "categoria": "despesas_fixas",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "pensao-alimenticia",
+    "label": "Pensão Alimentícia",
+    "categoria": "despesas_fixas",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "seguro-auto-manutencoes",
+    "label": "Seguro Auto/Manutenções",
+    "categoria": "despesas_fixas",
+    "grupo": "provisionamento"
+  },
+  {
+    "value": "material-escolar-matricula",
+    "label": "Material escolar/Matrícula",
+    "categoria": "despesas_fixas",
+    "grupo": "provisionamento"
+  },
+  {
+    "value": "iptu",
+    "label": "IPTU",
+    "categoria": "despesas_fixas",
+    "grupo": "provisionamento"
+  },
+  {
+    "value": "anuidade-classe",
+    "label": "Anuidade Classe",
+    "categoria": "despesas_fixas",
+    "grupo": "provisionamento"
+  },
+  {
+    "value": "midias-sociais",
+    "label": "Mídias Sociais",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "manutencao-domestica",
+    "label": "Manutenção e reparos domésticos",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "auxilio-familia",
+    "label": "Auxílio à família",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "detetizacao-esgoto",
+    "label": "Detetização / Esgoto",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "reserva-lazer",
+    "label": "Fundo de Reserva para lazer",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "correio-motoboy",
+    "label": "Correio / Motoboy",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "cigarro-cerveja",
+    "label": "Cigarro / Cerveja",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "itens-domesticos",
+    "label": "Utilidades Domésticas e Decoração",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "contribuicao-sindical",
+    "label": "Contribuição Sindical",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "anuidade-classe",
+    "label": "Anuidade de Classe",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "imposto-renda",
+    "label": "Imposto de renda",
+    "categoria": "despesas_variaveis",
+    "grupo": "outras_despesas"
+  },
+  {
+    "value": "fatura-cartao",
+    "label": "Parcelamento de Fatura Cartão",
+    "categoria": "despesas_variaveis",
+    "grupo": "Dividas Passivas"
+  },
+  {
+    "value": "pagamento-consignado",
+    "label": "Pagamento de Consignado",
+    "categoria": "despesas_variaveis",
+    "grupo": "Dividas Passivas"
+  },
+  {
+    "value": "credito-pessoal",
+    "label": "Parcela de Crédito Pessoal",
+    "categoria": "despesas_variaveis",
+    "grupo": "Dividas Passivas"
+  },
+  {
+    "value": "ensino-dependente",
+    "label": "Escola / Faculdade",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "cursos-dependente",
+    "label": "Cursos Extras",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "material-escolar-dependente",
+    "label": "Material Escolar",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "esportes-uniformes",
+    "label": "Esportes / Uniformes",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "mesada-dependente",
+    "label": "Mesada",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "passeios-ferias",
+    "label": "Passeios / Férias",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "vestuario-dependente",
+    "label": "Vestuário",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "saude-dependente",
+    "label": "saúde / Medicamentos",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "transporte-dependente",
+    "label": "transporte",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  },
+  {
+    "value": "pensao-mesada",
+    "label": "Pensão Alimentícia / Mesada",
+    "categoria": "despesas_variaveis",
+    "grupo": "despesas_dependentes"
+  }
+]

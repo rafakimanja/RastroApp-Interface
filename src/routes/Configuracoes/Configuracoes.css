@@ -1,0 +1,44 @@
+.bg-config {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden; /* para bordas arredondadas em conjunto */
+  margin: 0 auto;
+}
+
+/* Menu lateral */
+.internal-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 8px;
+  background-color: #d4d4d4;
+  width: 60px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Botões do menu */
+.menu-button {
+  width: 44px;
+  height: 44px;
+  background-color: #bdbdbd;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-button:hover {
+  background-color: #a9a9a9;
+}
+
+/* Área de conteúdo */
+.internal-content {
+  flex: 1;
+  padding: 24px;
+  background-color: #dedede;
+}
