@@ -154,7 +154,7 @@
   },
   {
     "value": "cursos",
-    "label": "cursos",
+    "label": "Cursos",
     "categoria": "despesas_fixas",
     "grupo": "educação"
   },
@@ -232,7 +232,7 @@
   },
   {
     "value": "outras-despesas-transporte",
-    "label": "outras_despesas com transporte",
+    "label": "outras despesas com transporte",
     "categoria": "despesas_fixas",
     "grupo": "transporte"
   },
@@ -378,49 +378,49 @@
     "value": "cabeleireiro-barbearia",
     "label": "Cabeleireiro/Barbearia",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "estetica",
     "label": "Estética",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "academia",
     "label": "Academia",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "roupas",
     "label": "Roupas",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "dizimo-caridade",
     "label": "Dízimo / Contribuições / Caridade",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "mesadas",
     "label": "Mesadas",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "higiene-pessoal",
     "label": "Higiene Pessoal",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "presentes",
     "label": "Presentes",
     "categoria": "despesas_fixas",
-    "grupo": "despesas_pessoais"
+    "grupo": "despesas pessoais"
   },
   {
     "value": "petshop",
@@ -462,19 +462,19 @@
     "value": "tarifas-bancarias",
     "label": "Tarifas Bancárias",
     "categoria": "despesas_fixas",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "anuidade-cartao",
     "label": "Anuidade Cartão de Crédito",
     "categoria": "despesas_fixas",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "pensao-alimenticia",
     "label": "Pensão Alimentícia",
     "categoria": "despesas_fixas",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "seguro-auto-manutencoes",
@@ -504,67 +504,67 @@
     "value": "midias-sociais",
     "label": "Mídias Sociais",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "manutencao-domestica",
     "label": "Manutenção e reparos domésticos",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "auxilio-familia",
     "label": "Auxílio à família",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "detetizacao-esgoto",
     "label": "Detetização / Esgoto",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "reserva-lazer",
     "label": "Fundo de Reserva para lazer",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "correio-motoboy",
     "label": "Correio / Motoboy",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "cigarro-cerveja",
     "label": "Cigarro / Cerveja",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "itens-domesticos",
     "label": "Utilidades Domésticas e Decoração",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "contribuicao-sindical",
     "label": "Contribuição Sindical",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "anuidade-classe",
     "label": "Anuidade de Classe",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "imposto-renda",
     "label": "Imposto de renda",
     "categoria": "despesas_variaveis",
-    "grupo": "outras_despesas"
+    "grupo": "outras despesas"
   },
   {
     "value": "fatura-cartao",
@@ -588,60 +588,60 @@
     "value": "ensino-dependente",
     "label": "Escola / Faculdade",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "cursos-dependente",
     "label": "Cursos Extras",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "material-escolar-dependente",
     "label": "Material Escolar",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "esportes-uniformes",
     "label": "Esportes / Uniformes",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "mesada-dependente",
     "label": "Mesada",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "passeios-ferias",
     "label": "Passeios / Férias",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "vestuario-dependente",
     "label": "Vestuário",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "saude-dependente",
     "label": "saúde / Medicamentos",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "transporte-dependente",
     "label": "transporte",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   },
   {
     "value": "pensao-mesada",
     "label": "Pensão Alimentícia / Mesada",
     "categoria": "despesas_variaveis",
-    "grupo": "despesas_dependentes"
+    "grupo": "despesas dependentes"
   }
 ]
