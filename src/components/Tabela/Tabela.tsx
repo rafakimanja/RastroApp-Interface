@@ -1,11 +1,32 @@
 import { DataGrid, type GridColDef } from '@mui/x-data-grid'
+import { IconButton } from '@mui/material';
+import EditIcon from '@mui/icons-material/Edit'
+import DeleteIcon from '@mui/icons-material/Delete';
 import './Tabela.css'
 
 const colunas: GridColDef[] = [
-  { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'titulo', headerName: 'Título', width: 130 },
-  { field: 'data', headerName: 'Data', width: 100 },
-  { field: 'categoria', headerName: 'Categoria', width: 130 },
+  { field: 'id', headerName: 'ID', width: 50 },
+  { field: 'titulo', headerName: 'Título', align: 'center', headerAlign: 'center', width: 130 },
+  { field: 'data', headerName: 'Data', align: 'center', headerAlign: 'center', width: 130 },
+  { field: 'categoria', headerName: 'Categoria', align: 'center', headerAlign: 'center', width: 130 },
+  { 
+    field: 'opcoes', 
+    headerName: 'Opções',
+    headerAlign: 'center',
+    width: 150,
+    sortable: false,
+    filterable: false,
+    renderCell: (params) => (
+      <div style={{ display: 'flex', justifyContent: 'space-evenly', gap: '0.5rem' }}>
+        <IconButton color='primary'>
+          <EditIcon />
+        </IconButton>
+        <IconButton color='error'>
+          <DeleteIcon />
+        </IconButton>
+      </div>
+    )
+  }
 ];
 
 const linhas = [

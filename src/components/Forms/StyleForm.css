@@ -92,11 +92,6 @@
   margin-top: 50px;
 }
 
-.btn-action {
-  display: flex;
-  gap: 30px;
-}
-
 .btn-form {
   width: 125px;
   padding: 12px;

@@ -1,0 +1,17 @@
+.title-content{
+    margin-left: 15px;
+    padding-top: 1px;
+}
+
+.inputs-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.linha {
+  border: none;
+  height: 2px;
+  background-color: #333;
+}

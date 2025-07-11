@@ -1,7 +1,8 @@
 import { Link } from "react-router"
 import CategoriaInput from "./CategoriaInput"
-import './StyleForm.css'
+import Button from '@mui/material/Button'
 import FileDropzone from "../Dropzone/FileDropzone"
+import './StyleForm.css'
 
 type FormInputDataProps = {
     titulo: string,
@@ -46,9 +47,11 @@ export default function FormInputData({ titulo, categoria, cor }: FormInputDataP
                     <label htmlFor="data">Data:</label>
                     <input type="date" id={cor} />
                 </div>
-                <div className="btn-action">
-                    <Link to='/' className="btn-form" id="cancel">Cancelar</Link>
-                    <button className="btn-form" id="submit">Salvar</button>
+                <div>
+                    <Link to='/'>
+                        <Button variant="contained" color="error">Voltar</Button>
+                    </Link>
+                    <Button variant="contained" color="success" style={{ marginLeft: '20px'}}>Salvar</Button>
                 </div>
             </div>
         </div>

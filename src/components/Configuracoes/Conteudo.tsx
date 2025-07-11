@@ -1,5 +1,8 @@
 import categorias from '../../data/categorias_formatado.json'
 import type { ICategoria } from '../../types/Categoria'
+import { FormControlLabel } from '@mui/material'
+import Checkbox from '@mui/material/Checkbox'
+import './Conteudo.css'
 
 type PropsConteudoConfig = {
     conteudo: string,
@@ -44,19 +47,23 @@ export default function ConteudoConfig({ conteudo }: PropsConteudoConfig){
                 data.grupos.map((grupo) => {
                     return(
                         <div className="text-content">
-                            <h3>{ grupo.toLowerCase() }</h3>
-                            {
-                                data.categorias.map((categoria) => {
+                            <div className="title-content">
+                                <h3>{ grupo.toLowerCase() }</h3>
+                            </div>
+                            <div className="inputs-content">
+                                {
+                                    data.categorias.map((categoria) => {
 
-                                    if(categoria.grupo === grupo)
-                                        return(
-                                            <div className="check-group">
-                                                <input type="checkbox" name="" id="" />
-                                                <label htmlFor="">{categoria.label}</label>
-                                            </div>
-                                        )
-                                })
-                            }
+                                        if(categoria.grupo === grupo)
+                                            return(
+                                                <div className="check-group">
+                                                    <FormControlLabel control={<Checkbox />} label={categoria.label}/>
+                                                </div>
+                                            )
+                                    })
+                                }
+                            </div>
+                            <hr className='linha'/>
                         </div>
                     )
                 })
