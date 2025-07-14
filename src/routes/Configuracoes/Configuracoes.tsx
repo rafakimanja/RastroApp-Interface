@@ -6,15 +6,15 @@ import './Configuracoes.css'
 
 export default function Configuracoes(){
 
-    const [conteudo, setConteudo] = useState('')
+    const [conteudo, setConteudo] = useState(false)
 
     return(
         <div className="bg-config">
             <nav className="internal-menu">
-                <button className="menu-button" onClick={() => setConteudo('variáveis')}> <AutorenewIcon /> </button>
-                <button className="menu-button" onClick={() => setConteudo('fixas')}> <DoNotDisturbOnIcon /> </button>
+                <button className="menu-button" onClick={() => setConteudo(false)}> <AutorenewIcon /> </button>
+                <button className="menu-button" onClick={() => setConteudo(true)}> <DoNotDisturbOnIcon /> </button>
             </nav>
-            <ConteudoConfig conteudo={conteudo}/>
+            <ConteudoConfig isFixas={conteudo}/>
         </div>
     )
 }

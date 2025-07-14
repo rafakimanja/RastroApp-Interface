@@ -5,16 +5,16 @@ import Checkbox from '@mui/material/Checkbox'
 import './Conteudo.css'
 
 type PropsConteudoConfig = {
-    conteudo: string,
+    isFixas: boolean,
 }
 
-function retornaConteudo(categoria: string){
+function retornaConteudo(isFixas: boolean){
 
     let data: ICategoria[] = []
     let grupos: string[] = []
     let tipo_despesa = ''
 
-    if(categoria === 'fixas')
+    if(isFixas)
         tipo_despesa = 'despesas_fixas'
     else
         tipo_despesa = 'despesas_variaveis'
@@ -36,13 +36,15 @@ function retornaConteudo(categoria: string){
     }
 }
 
-export default function ConteudoConfig({ conteudo }: PropsConteudoConfig){
+export default function ConteudoConfig({ isFixas }: PropsConteudoConfig){
 
-    const data = retornaConteudo(conteudo)
+    const data = retornaConteudo(isFixas)
 
     return(
         <div className="internal-content">
-            <h2>Despesas {conteudo}</h2>
+            {
+                isFixas ? <h2>Despesas Fixas</h2> : <h2>Despesas Variáveis</h2>
+            }
             {
                 data.grupos.map((grupo) => {
                     return(
@@ -71,4 +73,3 @@ export default function ConteudoConfig({ conteudo }: PropsConteudoConfig){
         </div>
     )
 }
-
