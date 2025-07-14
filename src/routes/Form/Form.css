@@ -1,10 +1,9 @@
 .bg-form {
   width: 60%;
-  margin: 32px auto;
+  margin: 3rem auto;
   padding: 0;
   border-radius: 12px;
-  background-color: var(--card-bg);
-  color: var(--text);
+  background-color: var(--clr-surface-a10);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
@@ -13,7 +12,7 @@
 
 /* Navbar embutida no topo do cartão */
 .navbar-inline {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--clr-surface-a40);
   padding: 12px 24px;
   background-color: transparent;
 }
@@ -33,12 +32,12 @@
   background: none;
   border: none;
   position: relative;
-  color: var(--text);
   font-weight: 500;
   font-size: 16px;
   padding: 8px 0;
   cursor: pointer;
   transition: color 0.3s ease;
+  color: var(--clr-text);
 }
 
 .nav-item::after {
@@ -48,7 +47,7 @@
   left: 0;
   height: 3px;
   width: 0%;
-  background-color: var(--primary);
+  background-color:#3cc670;
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -58,7 +57,7 @@
 }
 
 .nav-item:hover {
-  color: var(--primary);
+  color:#3cc670;
 }
 
 /* Conteúdo das abas (exemplo) */

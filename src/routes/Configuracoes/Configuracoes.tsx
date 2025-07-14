@@ -11,8 +11,8 @@ export default function Configuracoes(){
     return(
         <div className="bg-config">
             <nav className="internal-menu">
-                <button className="menu-button" onClick={() => setConteudo(false)}> <AutorenewIcon /> </button>
-                <button className="menu-button" onClick={() => setConteudo(true)}> <DoNotDisturbOnIcon /> </button>
+                <button className="menu-button" onClick={() => setConteudo(false)}> <AutorenewIcon sx={{ color: 'var(--clr-text)' }} /> </button>
+                <button className="menu-button" onClick={() => setConteudo(true)}> <DoNotDisturbOnIcon sx={{ color: 'var(--clr-text)' }} /> </button>
             </nav>
             <ConteudoConfig isFixas={conteudo}/>
         </div>

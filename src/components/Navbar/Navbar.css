@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--card-bg);
-    color: var(--text);
+    background-color: var(--clr-surface-a10);
     padding: 16px 32px;
     position: sticky;
     top: 0;
@@ -14,17 +13,17 @@
 .logo{
     font-size: 20px;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--clr-primary-a0);
 }
 
 .nav-links a{
     margin: 0 12px;
     text-decoration: none;
-    color: var(--text);
+    color: var(--clr-text);
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover{
-    color: var(--primary);
+    color: var(--clr-primary-a0);
 }

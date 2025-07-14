@@ -1,10 +1,10 @@
 .form-card {
   padding: 24px;
   border-radius: 12px;
-  color: var(--text);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--clr-surface-a10);
 }
 
 .form-title {
@@ -40,21 +40,19 @@
 .input-group select {
   padding: 10px 12px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
-  background-color: var(--card-bg);
-  color: var(--text);
+  border: 1px solid var(--clr-surface-a50);
+  background-color: var(--clr-surface-a10);
+  color: var(--clr-text);
   font-size: 14px;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .descricao {
   padding: 10px 12px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
-  background-color: var(--card-bg);
-  color: var(--text);
+  border: 1px solid var(--clr-surface-a50);
+  background-color: var(--clr-surface-a10);
+  color: var(--clr-text);
   font-size: 14px;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
   font-family: 'Inter', sans-serif;
   line-height: 1.4;
   width: 100%;
@@ -71,17 +69,15 @@
 .input-data label {
   margin-right: 10px;
   font-weight: 500;
-  color: var(--text);
 }
 
 .input-data input {
   padding: 10px 12px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--clr-surface-a50);
   background-color: var(--card-bg);
   color: var(--text);
   font-size: 14px;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .btn-group {
@@ -106,28 +102,8 @@
   box-sizing: border-box;      /* Garante que padding não estoure largura */
 }
 
-
-#submit{
-    background-color: var(--primary);
-    font-size: 17px;
-}
-
-#submit:hover {
-  background-color: var(--primary-dark);
-}
-
-#cancel{
-    background-color: #f54d48;
-    text-align: center;
-    text-decoration: none;
-}
-
-#cancel:hover{
-    background-color: #d43e39;
-}
-
 #verde:focus{
-  border-color: var(--primary);
+  border-color: #3cc670;
   outline: none;
 }
 

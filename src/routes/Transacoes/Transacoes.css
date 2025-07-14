@@ -1,12 +1,17 @@
 .bg-transacoes{
+    background-color: var(--clr-surface-a10);
     max-width: 1280px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    margin: 3rem auto;
+    padding: 1rem;
 }
 
 
 .container-tabela{
     width: 60%;
+    margin-bottom: 1rem;
 }

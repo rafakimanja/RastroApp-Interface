@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
+import { IconButton } from "@mui/material";
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 import './Navbar.css'
 
 export default function Navbar(){
@@ -27,9 +30,9 @@ export default function Navbar(){
                     Configurações
                 </NavLink>
             </nav>
-            <button className="toggle-theme" onClick={() => setDarkMode(!darkMode)}>
-                {darkMode ? '☀️' : '🌙'}
-            </button>
+            <IconButton onClick={() => setDarkMode(!darkMode)} sx={{ color: 'var(--clr-text)' }}>
+                { darkMode ? <LightModeIcon/> : <DarkModeIcon/>}
+            </IconButton>
         </header>
     )
 }
