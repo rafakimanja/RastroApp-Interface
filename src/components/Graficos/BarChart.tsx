@@ -6,24 +6,31 @@ export default function GraficoBarra() {
       xAxis={[
         {
           data: [
-            'Alimentação',
-            'Transporte',
-            'Moradia',
-            'Lazer',
-            'Educação',
-            'Saúde',
-            'Compras',
+            'Aluguel',
+            'Supermercado',
+            'Pensão',
+            'Academia',
+            'Farmácia',
+            'Assinaturas',
+            'Cabeleireiro',
           ],
           scaleType: 'band',
         },
       ]}
       series={[
         {
-          data: [500, 300, 1200, 400, 350, 450, 600, 200, 800, 250],
+          data: [1200, 900, 1500, 100, 350, 120, 50],
         },
       ]}
       height={250}
       borderRadius={5}
+      slotProps={{
+        axisTickLabel: {
+          style: {
+            fill: 'var(--clr-text)'
+          }
+        }
+      }}
     />
   );
 }

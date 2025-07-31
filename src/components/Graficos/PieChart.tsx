@@ -3,10 +3,10 @@ import { PieChart } from "@mui/x-charts/PieChart";
 export default function GraficoPizza() {
 
     const dados = [
-        { id: 0, value: 400, label: 'Cartao de Credito' },
-        { id: 1, value: 550, label: 'Cartao de Debito'},
-        { id: 2, value: 350, label: 'Pix'},
-        { id: 2, value: 100, label: 'Dinheiro'},
+        { id: 0, value: 400, label: 'Moradia' },
+        { id: 1, value: 550, label: 'Educação'},
+        { id: 2, value: 350, label: 'Transporte'},
+        { id: 2, value: 100, label: 'Dependentes'},
     ]
 
   return(
@@ -19,6 +19,13 @@ export default function GraficoPizza() {
       ]}
       width={200}
       height={200}
+      slotProps={{
+        legend: {
+          sx: {
+            color: 'var(--clr-text)'
+          }
+        }
+      }}
     />
   )
 }

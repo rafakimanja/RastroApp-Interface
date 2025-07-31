@@ -2,17 +2,17 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import { SparkLineChart } from '@mui/x-charts/SparkLineChart';
 
-type BalancoTipo = 'ganhos' | 'investimentos' | 'despesas';
+type TiposPagamento = 'credito' | 'debito' | 'dinheiro';
 
 type GraficoSparklineProps = {
-  balanco: BalancoTipo;
+  metodo: TiposPagamento;
 };
 
-export default function GraficoSparkline({ balanco }: GraficoSparklineProps) {
-  const cores: Record<BalancoTipo, string> = {
-    ganhos: "#36b98093",
-    investimentos: "#daa11d9c",
-    despesas: "#fd1a124d",
+export default function GraficoSparkline({ metodo }: GraficoSparklineProps) {
+  const cores: Record<TiposPagamento, string> = {
+    dinheiro: "#32aa5093",
+    credito: "#da531d9c",
+    debito: "#12a7fd81",
   };
 
   return (
@@ -24,7 +24,7 @@ export default function GraficoSparkline({ balanco }: GraficoSparklineProps) {
           area
           showTooltip
           showHighlight
-          color={cores[balanco]}
+          color={cores[metodo]}
         />
       </Box>
     </Stack>

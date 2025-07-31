@@ -21,13 +21,13 @@ function App() {
         </div>
         <div className="row">
           <Card id='graficos'>
-            <h2>Gastos por Categoria</h2>
+            <h2>Maiores Gastos</h2>
             <div className="graph-content">
               <GraficoBarra />
             </div>
           </Card>
           <Card id='graficos'>
-            <h2>Formas de Pagamento</h2>
+            <h2>Gastos por Categoria</h2>
             <div className="graph-content">
               <GraficoPizza />
             </div>
@@ -37,16 +37,16 @@ function App() {
           <Card id='informacoes'>
             <div className="mini-graficos">
               <div className="content-grapharea">
-                <GraficoSparkline balanco='ganhos'  />
-                <p>Total Ganhos: <b>R$ 10K</b> </p>
+                <GraficoSparkline metodo='credito'  />
+                <p>Cartão de Crédito: <b>R$ 10K</b> </p>
               </div>
               <div className="content-grapharea">
-                <GraficoSparkline balanco='investimentos' />
-                <p>Total Investidos: <b>R$ 5K</b> </p>
+                <GraficoSparkline metodo='debito' />
+                <p>Cartão de Débito: <b>R$ 5K</b> </p>
               </div>
               <div className="content-grapharea">
-                <GraficoSparkline balanco='despesas' />
-                <p>Total Despesas: <b>R$ 20K</b> </p>
+                <GraficoSparkline metodo='dinheiro' />
+                <p>Pix / Dinheiro: <b>R$ 20K</b> </p>
               </div>
             </div>
           </Card>
