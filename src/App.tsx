@@ -1,6 +1,9 @@
 import Card from './components/Cards/Card'
 import Inforcard from './components/Infocards/InforCard'
+import GraficoPizza from './components/Graficos/PieChart'
+import GraficoBarra from './components/Graficos/BarChart'
 import './App.css'
+import GraficoSparkline from './components/Graficos/LineChart'
 
 function App() {
   return (
@@ -18,18 +21,34 @@ function App() {
         </div>
         <div className="row">
           <Card id='graficos'>
-            <h1>Gráfico 2</h1>
+            <h2>Gastos por Categoria</h2>
+            <div className="graph-content">
+              <GraficoBarra />
+            </div>
           </Card>
           <Card id='graficos'>
-            <h1>Gráfico 1</h1>
+            <h2>Formas de Pagamento</h2>
+            <div className="graph-content">
+              <GraficoPizza />
+            </div>
           </Card>
         </div>
         <div className="row">
           <Card id='informacoes'>
-            <p>Informação</p>
-          </Card>
-          <Card id='informacoes'>
-            <p>Próximo mês</p>
+            <div className="mini-graficos">
+              <div className="content-grapharea">
+                <GraficoSparkline balanco='ganhos'  />
+                <p>Total Ganhos: <b>R$ 10K</b> </p>
+              </div>
+              <div className="content-grapharea">
+                <GraficoSparkline balanco='investimentos' />
+                <p>Total Investidos: <b>R$ 5K</b> </p>
+              </div>
+              <div className="content-grapharea">
+                <GraficoSparkline balanco='despesas' />
+                <p>Total Despesas: <b>R$ 20K</b> </p>
+              </div>
+            </div>
           </Card>
         </div>
       </div>
