@@ -1,14 +1,16 @@
 import { PieChart } from "@mui/x-charts/PieChart";
 
-export default function GraficoPizza() {
+interface DadosGrafico {
+  id: number
+  value: number
+  label: string
+}
 
-    const dados = [
-        { id: 0, value: 400, label: 'Moradia' },
-        { id: 1, value: 550, label: 'Educação'},
-        { id: 2, value: 350, label: 'Transporte'},
-        { id: 2, value: 100, label: 'Dependentes'},
-    ]
+interface GraficoPizzaProps {
+  dados: DadosGrafico[]
+}
 
+export default function GraficoPizza({ dados }: GraficoPizzaProps) {
   return(
    <PieChart
       series={[

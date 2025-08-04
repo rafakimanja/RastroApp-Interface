@@ -1,4 +1,4 @@
-import type { Transacao } from "../../types/Transacao"
+import type { Transacao } from "../../@types/Transacao"
 import './Registro.css'
 import { useNavigate } from "react-router";
 

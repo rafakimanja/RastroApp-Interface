@@ -1,5 +1,5 @@
 import categorias from '../../data/categorias_formatado.json'
-import type { ICategoria } from '../../types/Categoria'
+import type { ICategoria } from '../../@types/Categoria'
 import { FormControlLabel } from '@mui/material'
 import Checkbox from '@mui/material/Checkbox'
 import './Conteudo.css'

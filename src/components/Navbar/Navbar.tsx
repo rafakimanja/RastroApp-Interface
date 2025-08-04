@@ -21,7 +21,10 @@ export default function Navbar(){
                     Home
                 </NavLink>
                 <NavLink to="/form" end>
-                    Form
+                    Registrar
+                </NavLink>
+                <NavLink to="/investimentos">
+                    Investimenos
                 </NavLink>
                 <NavLink to="/register">
                     Registros

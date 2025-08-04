@@ -3,9 +3,16 @@ import Inforcard from './components/Infocards/InforCard'
 import GraficoPizza from './components/Graficos/PieChart'
 import GraficoBarra from './components/Graficos/BarChart'
 import './App.css'
-import GraficoSparkline from './components/Graficos/LineChart'
 
 function App() {
+
+  const fakeData = [
+        { id: 0, value: 400, label: 'Moradia' },
+        { id: 1, value: 550, label: 'Educação'},
+        { id: 2, value: 350, label: 'Transporte'},
+        { id: 2, value: 100, label: 'Dependentes'},
+    ]
+
   return (
       <div className="dashboard">
         <div className="row" style={{gap: '7rem'}}>
@@ -29,11 +36,11 @@ function App() {
           <Card id='graficos'>
             <h2>Gastos por Categoria</h2>
             <div className="graph-content">
-              <GraficoPizza />
+              <GraficoPizza dados={fakeData} />
             </div>
           </Card>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <Card id='informacoes'>
             <div className="mini-graficos">
               <div className="content-grapharea">
@@ -50,7 +57,7 @@ function App() {
               </div>
             </div>
           </Card>
-        </div>
+        </div> */}
       </div>
   )
 }
